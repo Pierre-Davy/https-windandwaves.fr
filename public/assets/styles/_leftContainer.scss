@@ -1,0 +1,105 @@
+.leftContainer {
+
+width: 50%;
+padding: 20px 50px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  @media screen and (max-width: 1300px ) {
+    padding: 20px 0px;
+  }
+  @media screen and (max-width: 920px ) {
+   width: 100%;
+  }
+
+  .mainData{
+
+    @media screen and (max-width: 920px ) {
+      width: 90%;
+    }
+  }
+
+  .flexCenterWrap {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+
+  .hourSelection{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  #nextHour, #previousHour {
+    background-color: $base-color;
+  }
+
+.datasContainerBlur{
+
+  background-color: rgba(240, 248, 255, 0.2);
+
+
+  h2 {
+    color: aliceblue;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .containid {
+    background-color: $base-color;
+    width: 140px;
+    height: 90px;
+    border: 1px black solid;
+    text-align: center;
+    margin: 20px;
+    padding: 5px;
+    user-select: none;
+
+    @media screen and (max-width: 1300px ) {
+      margin: 5px;
+    }
+  }
+  p{
+   margin-top: 15px;
+    font-weight: bold;
+  }
+
+}
+
+
+
+
+  #alertWindDirection {
+    margin: 0 auto;
+    text-align: center;
+    color: $danger-color;
+
+    h2 {
+      color: $danger-color;
+    }
+
+    .alertWindDirectionBox {
+      background-color: rgba(240, 248, 255, 0.58);
+      color: $danger-color;
+      margin: 0 auto;
+      padding: 5px;
+      width: fit-content;
+      border: 1px solid $danger-color;
+      margin-bottom: 20px;
+    }
+  }
+
+
+
+
+
+
+
+  #previousHour, #nextHour, #satelliteView, #streetView {
+    width: fit-content;
+    transform: rotate(0deg);
+  }
+
+}

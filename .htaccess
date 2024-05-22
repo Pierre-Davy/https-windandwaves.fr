@@ -1,0 +1,24 @@
+#RewriteEngine on
+
+# Ne redirige pas si la demande concerne le fichier robots.txt
+#RewriteCond %{REQUEST_URI} !^/robots\.txt [NC]
+
+# Redirection vers /public pour les autres requêtes
+#RewriteCond %{HTTP_HOST} ^windandwaves.fr [NC]
+#RewriteCond %{REQUEST_URI} !^/public [NC]
+#RewriteRule ^(.*)$ /public/$1 [L]
+
+RewriteEngine on
+
+# Ne redirige pas si la demande concerne le fichier robots.txt
+RewriteCond %{REQUEST_URI} !^/robots\.txt [NC]
+
+# Redirection vers /public pour les autres requêtes
+RewriteCond %{HTTP_HOST} ^windandwaves\.fr [NC]
+RewriteCond %{REQUEST_URI} !^/public [NC]
+
+# Rediriger les demandes pour logo.png vers le fichier correspondant
+RewriteRule ^public/assets/img/logo\.png$ /public/assets/img/logo.png [L]
+
+# Redirection vers /public pour les autres requêtes
+RewriteRule ^(.*)$ /public/$1 [L]

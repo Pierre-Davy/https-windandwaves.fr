@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$base-color:#3DD1E7;
+$danger-color: #FF0000FF;
+
+@font-face {
+  font-family: "lobster";
+  src: url("../font/Lobster-Regular.ttf");
+}
+
+.alert-danger h1 {
+  background-color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  font-size: 2rem;
+  color: $danger-color;
+}
+
+.alert-success h1 {
+  background-color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  font-size: 2rem;
+  color: green;
+}
+
+body {
+  background-image: url("../img/background.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+
+
+a, button {
+  margin: 10px 20px;
+  user-select: none;
+}

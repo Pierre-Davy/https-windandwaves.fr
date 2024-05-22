@@ -1,0 +1,132 @@
+.forum {
+  position: relative;
+  margin: 20px auto;
+  padding: 20px;
+  width:75%;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 20px;
+
+  @media screen and (max-width: 920px ) {
+    width: 90%;
+  }
+
+  @media screen and (max-width: 600px ) {
+    width: 100%;
+  }
+  @media screen and (max-width: 500px ) {
+    padding: 0px;
+  }
+
+  h2 {
+    color: black;
+    font-family: "lobster","Lucida Sans", Geneva, Verdana, sans-serif;
+    font-size: 3rem;
+    text-align: center;
+  }
+
+.forumItemContainer {
+  padding: 15px;
+  width: 90%;
+
+  @media screen and (max-width: 500px ) {
+    width: 100%;
+  }
+}
+
+
+
+.forumItem {
+  width: 90%;
+  border-radius: 10px;
+  box-shadow: 10px 5px 5px gray;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: rgba(245, 245, 220, 0.50);
+  border-top: 1px solid grey;
+  border-left: 1px solid grey;
+
+
+  i{
+    margin-left: 5px;
+  }
+}
+
+.buttonForum {
+  padding: 5px;
+  width: fit-content;
+  height: fit-content;
+display: block;
+  border: 1px solid gray;
+  background-color: #3DD1E7;
+  font-weight: bold;
+  box-shadow: 2px 2px 2px gray;
+  color: #151515;
+  text-decoration: none;
+  cursor: pointer;
+  transform: rotate(-2deg)
+}
+.buttonForum:hover{
+  transform: rotate(0deg) scale(1.05);
+}
+
+/*SCROLLBAR*/
+.forumItemContainer {
+  overflow-y: scroll;
+}
+
+/* Firefox (uncomment to work in Firefox, although other properties will not work!)  */
+/**.forumItemContainer {
+  scrollbar-width: thin;
+  scrollbar-color: #2B4E75 #DFE9EB;
+}*/
+/* Chrome, Edge and Safari */
+.forumItemContainer::-webkit-scrollbar {
+  height: 20px;
+  width: 20px;
+
+}
+
+.forumItemContainer::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #DFE9EB;
+
+}
+
+.forumItemContainer::-webkit-scrollbar-track:hover {
+  background-color: #B8C0C2;
+}
+
+.forumItemContainer::-webkit-scrollbar-track:active {
+  background-color: #B8C0C2;
+}
+
+.forumItemContainer::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #3DD1E7;
+  cursor: pointer;
+}
+
+.forumItemContainer::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(0,123,176);
+}
+
+.forumItemContainer::-webkit-scrollbar-thumb:active {
+  background-color: #5091D9;
+}
+
+/* END SCROLLBAR*/
+
+.commentItem {
+  background-color: rgba(128, 128, 128, 0.25);
+  margin-bottom: 10px;
+  padding: 5px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px gray;
+}
+
+}

@@ -1,0 +1,461 @@
+@import "default.css";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "lobster";
+  src: url("../font/Lobster-Regular.ttf");
+}
+.alert-danger h1 {
+  background-color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  font-size: 2rem;
+  color: red;
+}
+
+.alert-success h1 {
+  background-color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  font-size: 2rem;
+  color: green;
+}
+
+body {
+  background-image: url("../img/background.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+a, button {
+  margin: 10px 20px;
+  user-select: none;
+}
+
+.button-53 {
+  background-color: #3DD1E7;
+  border: 0 solid #E5E7EB;
+  box-sizing: border-box;
+  color: #000000;
+  font-family: ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1rem;
+  padding: 0.5rem 0.5rem;
+  position: relative;
+  text-align: center;
+  text-decoration: none #000000 solid;
+  text-decoration-thickness: auto;
+  width: auto;
+  cursor: pointer;
+  transform: rotate(-2deg);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-53:focus {
+  outline: 0;
+}
+
+.button-53:after {
+  content: "";
+  position: absolute;
+  border: 1px solid #000000;
+  bottom: 4px;
+  left: 4px;
+  width: calc(100% - 1px);
+  height: calc(100% - 1px);
+}
+
+.button-53:hover:after {
+  bottom: 2px;
+  left: 2px;
+}
+
+.selected {
+  background-color: #dbebed;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(240, 248, 255, 0.541);
+}
+@media screen and (max-width: 590px) {
+  header {
+    flex-direction: column;
+  }
+}
+header img {
+  width: 200px;
+}
+@media screen and (max-width: 700px) {
+  header img {
+    width: 150px;
+  }
+}
+header h1 {
+  font-size: 4rem;
+  font-family: "lobster";
+  padding: 50px;
+  letter-spacing: 2px;
+  text-align: center;
+  text-decoration: underline;
+}
+@media screen and (max-width: 900px) {
+  header h1 {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  header h1 {
+    font-size: 2rem;
+  }
+}
+header p {
+  padding: 20px;
+  text-align: justify;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+header .logInterface {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header .button-53 {
+  width: 200px;
+}
+@media screen and (max-width: 700px) {
+  header .button-53 {
+    width: 150px;
+  }
+}
+header .connectionText {
+  font-size: 1.2rem;
+  color: #046404;
+}
+@media screen and (max-width: 700px) {
+  header .connectionText {
+    font-size: 0.8rem;
+  }
+}
+
+.mainContainer {
+  display: flex;
+}
+@media screen and (max-width: 920px) {
+  .mainContainer {
+    flex-direction: column;
+  }
+}
+
+.leftContainer {
+  width: 50%;
+  padding: 20px 50px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 1300px) {
+  .leftContainer {
+    padding: 20px 0px;
+  }
+}
+@media screen and (max-width: 920px) {
+  .leftContainer {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 920px) {
+  .leftContainer .mainData {
+    width: 90%;
+  }
+}
+.leftContainer .flexCenterWrap {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.leftContainer .hourSelection {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.leftContainer #nextHour, .leftContainer #previousHour {
+  background-color: #3DD1E7;
+}
+.leftContainer .datasContainerBlur {
+  background-color: rgba(240, 248, 255, 0.2);
+}
+.leftContainer .datasContainerBlur h2 {
+  color: aliceblue;
+  font-size: 2rem;
+  text-align: center;
+}
+.leftContainer .datasContainerBlur .containid {
+  background-color: #3DD1E7;
+  width: 140px;
+  height: 90px;
+  border: 1px black solid;
+  text-align: center;
+  margin: 20px;
+  padding: 5px;
+  user-select: none;
+}
+@media screen and (max-width: 1300px) {
+  .leftContainer .datasContainerBlur .containid {
+    margin: 5px;
+  }
+}
+.leftContainer .datasContainerBlur p {
+  margin-top: 15px;
+  font-weight: bold;
+}
+.leftContainer #alertWindDirection {
+  margin: 0 auto;
+  text-align: center;
+  color: red;
+}
+.leftContainer #alertWindDirection h2 {
+  color: red;
+}
+.leftContainer #alertWindDirection .alertWindDirectionBox {
+  background-color: rgba(240, 248, 255, 0.58);
+  color: red;
+  margin: 0 auto;
+  padding: 5px;
+  width: fit-content;
+  border: 1px solid red;
+  margin-bottom: 20px;
+}
+.leftContainer #previousHour, .leftContainer #nextHour, .leftContainer #satelliteView, .leftContainer #streetView {
+  width: fit-content;
+  transform: rotate(0deg);
+}
+
+.rightContainer {
+  width: 50%;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media screen and (max-width: 920px) {
+  .rightContainer {
+    width: 100%;
+    padding: 0;
+  }
+}
+.rightContainer #buttonViewMap {
+  text-align: center;
+}
+.rightContainer #buttonViewMap .button-53 {
+  width: 150px;
+}
+.rightContainer #canvasContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+.rightContainer #map {
+  min-height: 100vh;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.rightContainer .maplibregl-control-container {
+  display: none;
+}
+.rightContainer canvas {
+  min-height: 100vh;
+  border: 1px solid black;
+}
+
+.forum {
+  position: relative;
+  margin: 20px auto;
+  padding: 20px;
+  width: 75%;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 20px;
+  /*SCROLLBAR*/
+  /* Firefox (uncomment to work in Firefox, although other properties will not work!)  */
+  /**.forumItemContainer {
+    scrollbar-width: thin;
+    scrollbar-color: #2B4E75 #DFE9EB;
+  }*/
+  /* Chrome, Edge and Safari */
+  /* END SCROLLBAR*/
+}
+@media screen and (max-width: 920px) {
+  .forum {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .forum {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .forum {
+    padding: 0px;
+  }
+}
+.forum h2 {
+  color: black;
+  font-family: "lobster", "Lucida Sans", Geneva, Verdana, sans-serif;
+  font-size: 3rem;
+  text-align: center;
+}
+.forum .forumItemContainer {
+  padding: 15px;
+  width: 90%;
+}
+@media screen and (max-width: 500px) {
+  .forum .forumItemContainer {
+    width: 100%;
+  }
+}
+.forum .forumItem {
+  width: 90%;
+  border-radius: 10px;
+  box-shadow: 10px 5px 5px gray;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: rgba(245, 245, 220, 0.5);
+  border-top: 1px solid grey;
+  border-left: 1px solid grey;
+}
+.forum .forumItem i {
+  margin-left: 5px;
+}
+.forum .buttonForum {
+  padding: 5px;
+  width: fit-content;
+  height: fit-content;
+  display: block;
+  border: 1px solid gray;
+  background-color: #3DD1E7;
+  font-weight: bold;
+  box-shadow: 2px 2px 2px gray;
+  color: #151515;
+  text-decoration: none;
+  cursor: pointer;
+  transform: rotate(-2deg);
+}
+.forum .buttonForum:hover {
+  transform: rotate(0deg) scale(1.05);
+}
+.forum .forumItemContainer {
+  overflow-y: scroll;
+}
+.forum .forumItemContainer::-webkit-scrollbar {
+  height: 20px;
+  width: 20px;
+}
+.forum .forumItemContainer::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #DFE9EB;
+}
+.forum .forumItemContainer::-webkit-scrollbar-track:hover {
+  background-color: #B8C0C2;
+}
+.forum .forumItemContainer::-webkit-scrollbar-track:active {
+  background-color: #B8C0C2;
+}
+.forum .forumItemContainer::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #3DD1E7;
+  cursor: pointer;
+}
+.forum .forumItemContainer::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(0, 123, 176);
+}
+.forum .forumItemContainer::-webkit-scrollbar-thumb:active {
+  background-color: #5091D9;
+}
+.forum .commentItem {
+  background-color: rgba(128, 128, 128, 0.25);
+  margin-bottom: 10px;
+  padding: 5px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px gray;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(240, 248, 255, 0.541);
+}
+footer h3 {
+  color: red;
+  padding: 10px;
+  text-align: center;
+}
+footer p {
+  padding: 10px;
+}
+footer div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 520px) {
+  footer div {
+    flex-direction: column;
+  }
+}
+footer img {
+  width: 100px;
+  margin: 20px 50px;
+}
+@media screen and (max-width: 630px) {
+  footer img {
+    width: 75px;
+  }
+}
+footer a {
+  text-decoration: none;
+}
+footer .contact {
+  margin: 20px 50px;
+  display: flex;
+  font-size: 1.5rem;
+  align-items: center;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: aliceblue;
+  box-shadow: 5px 5px 5px grey;
+}
+@media screen and (max-width: 630px) {
+  footer .contact {
+    font-size: 1rem;
+  }
+}
+footer .contact span {
+  margin-left: 10px;
+}
+
+/*# sourceMappingURL=index.css.map */

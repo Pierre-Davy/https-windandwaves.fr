@@ -1,0 +1,53 @@
+.rightContainer {
+
+  width: 50%;
+  padding: 20px 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media screen and (max-width: 920px ) {
+    width: 100%;
+    padding: 0;
+  }
+
+  #buttonViewMap{
+    text-align: center;
+    .button-53{
+      width: 150px;
+    }
+  }
+
+  #canvasContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+
+  }
+
+  #map {
+    min-height: 100vh;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+  }
+
+  .maplibregl-control-container {
+    display: none;
+  }
+
+  canvas {
+    min-height: 100vh;
+    border: 1px solid black;
+  }
+
+}
+
+
+

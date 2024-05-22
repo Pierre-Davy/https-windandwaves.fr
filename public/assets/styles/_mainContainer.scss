@@ -1,0 +1,10 @@
+.mainContainer{
+display: flex;
+
+
+  @media screen and (max-width: 920px ) {
+      flex-direction: column;
+  }
+
+
+}

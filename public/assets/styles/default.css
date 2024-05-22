@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.blockFormContainer{
+    text-align: center;
+
+    form{
+        margin: 50px auto 20px;
+    }
+    a{
+        display: block;
+        margin-bottom: 20px;
+    }
+    legend{
+        margin-bottom: 5px;
+    }
+}
+
+
+.infoPage {
+    text-align: center;
+
+
+    h1{
+        text-align: center;
+        margin: 50px 0px;
+        text-transform: uppercase;
+        text-decoration: underline;
+    }
+
+    .infos{
+
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media screen and (max-width: 790px) {
+            
+            flex-direction: column;
+        }
+
+        .infosText{
+            width: 50%;
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+        .blockForms{
+            width: 50%;
+            @media screen and (max-width: 790px) {
+
+                width: 100%;
+            }
+
+        }
+    }
+
+    a{
+        padding-bottom: 20px;
+    }
+}
+
+.administration{
+
+    background-color: lightgrey;
+    width: 100vw;
+    min-height: 100vh;
+    text-align: center;
+
+    h1{
+        font-size: 3rem;
+        @media screen and (max-width: 450px) {
+          font-size: 2rem;
+        }
+    }
+
+    h1, h2{
+        padding: 20px;
+        text-decoration: underline;
+            }
+
+    button{
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .adminUserDivContainer{
+        text-align: left;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        @media screen and (max-width: 660px) {
+            flex-wrap: nowrap;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .adminUserDiv{
+            border: 1px solid black;
+            margin: 5px;
+            padding: 5px;
+            font-size: 1.2rem;
+            line-height: 2rem;
+
+            @media screen and (max-width: 660px) {
+                width: fit-content;
+            }
+
+            input[type = "submit"]{
+                padding: 10px;
+                border-radius: 10px;
+                background-color: rgba(255, 0, 0, 0.5);
+                font-weight: bold;
+            }
+        }
+        
+    }
+    
+    .adminMessageDivContainer{
+       display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .adminMessageDiv{
+            width: 100%;
+            margin-bottom: 50px;
+            table{
+                margin: 0 auto;
+                width: 90%;
+                line-height: 2rem;
+
+                border: 1px solid black;
+
+                .tdtitle{
+                    width: 30%;
+                }
+            }
+        }
+    }
+
+}
+
+.page404 img{
+    height: 100vh;
+width: 100vw;
+}

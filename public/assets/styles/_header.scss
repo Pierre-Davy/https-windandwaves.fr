@@ -1,0 +1,62 @@
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(240, 248, 255, 0.541);
+
+  @media screen and (max-width: 590px ) {
+    flex-direction: column;
+  }
+img{
+  width: 200px;
+  @media screen and (max-width: 700px ) {
+    width:150px
+  }
+}
+  h1 {
+    font-size: 4rem;
+    font-family: "lobster";
+    padding: 50px;
+    letter-spacing: 2px;
+    text-align: center;
+    text-decoration: underline;
+    @media screen and (max-width: 900px ) {
+      font-size: 3rem;
+    }
+    @media screen and (max-width: 700px ) {
+      font-size: 2rem;
+    }
+  }
+
+  p{
+    padding: 20px;
+    text-align: justify;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+  };
+
+  .logInterface {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+  }
+    .button-53{
+      width: 200px;
+      @media screen and (max-width: 700px ) {
+        width: 150px;
+      }
+    }
+  .connectionText {
+    font-size: 1.2rem;
+    color: #046404;
+    @media screen and (max-width: 700px ) {
+      font-size: 0.8rem;
+    }
+  }
+}
+
+
